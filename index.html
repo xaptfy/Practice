@@ -2,50 +2,99 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="Contrent-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>xaptfy</title>
-
+  <title>Portfolio</title >
+<!--Подключаем шрифты-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+	<!--Подключаем иконки-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-  <link rel="stylesheet" href="style.css">
+<!--Подключаем файл со стилями светлая и темная-->
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-
-  <header class="header">
-    <span class="logo">XAPTFY</span>
+  <header>
+    <div class="header_head">
+	    <div class="container">
+			<div class="header_inner">
+				<div class="logo">XAPTFY</div>
+				<nav>
+					<ul>
+						<li><a href="#about">Обо мне</a></li>
+						<li><a href="#portfolio">Портфолио</a></li>
+						<li><a href="https://vk.com/bikovskayaa" target="_blank"><i class='bx bxl-vk'></i></a></li>
+						<li><a href="https://t.me/xaptfy" target="_blank"><i class='bx bxl-telegram'></i></a></li>
+						<li><a href="https://github.com/xaptfy" target="_blank"><i class='bx bxl-github'></i></a></li>
+						<li class="switch"><a href="#"></a></li>
+					</ul>
+				</nav>
+			</div>
+	    </div>
+	</div>
+    </div class="header_body">
+		<div class="container">
+			<div class="header_body_inner">
+				<div class="left">
+					<div class="title">
+						Привет, <br>я Арина,<br>Программист
+					</div>
+				</div>
+				<div class="right">
+					<img src="img/11.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
   </header>
-
-  <div class="hero">
-    <div class="container hero__container">
-      <div class="hero__about">
-        <h1 class="hero__title">Программист</h1>
-        <h2 class="hero__subtitle">Арина Быковская</h2>
-        <p class="hero__description">
-          Привет, я начинающий программист. Ты попал на мой сайт. Сейчас я учусь в МТУСИ. У меня небольшой опыт разработки, изучаю C++, Python, Java, Kotlin, HTML/CSS + JS. В будущем я хотела бы разрабатывать мобильные приложения. Здесь вы можете увидеть мои несколько работ. Пишите для сотрудничества.
-        </p>
-
-        <div class="hero__links">
-          <a class="hero__link" href="https://vk.com/bikovskayaa" target="_blank"><i class='bx bxl-vk'></i></a>
-          <a class="hero__link" href="https://t.me/xaptfy"><i class='bx bxl-telegram'><target="_blank"></i></a>
-          <a class="hero__link" href="https://github.com/xaptfy" target="_blank"><i class='bx bxl-github'></i></a>
-        </div>
-
-      </div>
-
-      <div class="hero__box">
-        <img class="hero__box-img" src="11.png" alt="">
-      </div>
-
-    </div>
-
-  </div>
-
+  
+  <section id="about">
+		<div class="container">
+			<div class="section_title">
+			Обо мне
+			</div>
+			<div class="about_text">
+				<p>
+				Сейчас я учусь в МТУСИ. У меня небольшой опыт разработки, изучаю C++, Python, Java, Kotlin, HTML/CSS + JS. В будущем я хотела бы разрабатывать мобильные приложения.
+				</p>
+			</div>
+		</div>
+  </section>
+  
+  <section id="portfolio">
+		<div class="container">
+			<div class="section_title">
+				Портфолио
+			</div>
+			<div class="portfolio_items">
+				<a href="#" class="item">
+					<img src="img/1.png" alt="">
+				</a>
+				<a href="#" class="item">
+					<img src="img/2.png" alt="">
+				</a>
+				<a href="#" class="item">
+					<img src="img/3.png" alt="">
+				</a>
+				<a href="#" class="item">
+					<img src="img/4.png" alt="">
+				</a>
+				<a href="#" class="item">
+					<img src="img/5.png" alt="">
+				</a>
+			</div>
+		</div>
+  </section>
+  
+  
+ 
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
