@@ -180,48 +180,6 @@ body.switchMode .about_text p{
 
 
 
-
-
-
-@media screen and (max-width: 978px) {
-  .hero {
-    padding-top: 30px;
-  }
-
-  .hero__container {
-    grid-row-gap: 20px;
-  }
-
-  .hero__title {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-
-  .hero__subtitle {
-    font-size: 22px;
-    font-weight: 400;
-  }
-
-  .hero__description {
-    font-size: 14px;
-  }
-
-  .hero__about {
-    text-align: center;
-  }
-
-  .hero__links {
-    justify-content: center;
-  }
-
-  .hero__box {
-    max-width: 350px;
-    justify-self: center;
-  }
-}
-
-
-
 @keyframes ava-animate {
   0% {
     border-radius: 62% 38% 72% 28% / 67% 32% 68% 33%;
