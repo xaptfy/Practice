@@ -1,0 +1,269 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+/*кнопка смены режима*/
+body.switchMode{
+  background-color: #ccc;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/* стиль заголовка*/
+.header {
+  width: 100%;
+  padding: 15px 0;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  font-weight: 300;
+  color: gray;
+}
+/*расположение блока*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*стилизация блока контейнер*/
+.container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+body.switchMode .container{
+  background-color: #ccc;
+}
+.header nav ul li{
+  list-style-type: none;
+}
+
+.header nav ul li a{
+  font-size: 13px;
+  color: #ccc;
+  display: inline-block;
+  padding: 20px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header nav ul li.switch a{
+  position:relative;
+  width: 45px;
+  height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 10em;
+  padding: 0;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.header nav ul li.switch a:after{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 10em;
+  transition: all .5s ease;
+}
+/*кнопочка света*/
+body.switchMode .header_inner nav ul li.switch a:after{
+  left: 20 px;
+  color: #000;
+}
+.hero__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax( 290px,1fr));
+  grid-gap: 20px;
+}
+hero.switchMode .hero__container {
+  color: #fff;
+}
+
+/*расположение блока*/
+.hero__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+/*1 заголовок*/
+.hero__title {
+  font-size: 48px;
+  line-height: 1.1;
+
+  margin-bottom: 20px;
+}
+/*2 заголовок*/
+.hero__prof {
+  color: #4facfe;
+  white-space: nowrap;
+}
+
+.hero__subtitle {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.hero__links {
+  display: flex;
+}
+
+.hero__link {
+  margin-right: 10px;
+
+  font-size: 30px;
+  color: #000;
+}
+
+.hero__link:hover {
+  color: #000;
+}
+
+
+.hero__box {
+  max-width: 500px;
+  justify-self: center;
+  overflow: hidden;
+  border: 10px solid #fff;
+
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+
+  animation: ava-animate 5s infinite alternate;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.hero__box-img {
+  animation: ava-bg 3s infinite alternate;
+}
+.section_titile{
+  font-size: 32px;
+  font-weight: 400;	
+}
+/*портфолио фото*/
+.portfolio_items{
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.portfolio_items.item{
+  display: block;
+  position: relative;
+  margin: 0 10px 15 px 0;
+  
+}
+.portfolio_items.item:last-child{
+	margin-right: 0;
+}
+.portfolio_items .item img{
+  
+  max-width: 95%;
+}
+.portfolio_items .item1 img{
+  
+  max-width: 95%;
+}
+.portfolio_items .item2 img{
+  
+  max-width: 95%;
+}
+
+@media screen and (max-width: 978px) {
+  .hero {
+    padding-top: 30px;
+  }
+
+  .hero__container {
+    grid-row-gap: 20px;
+  }
+
+  .hero__title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .hero__subtitle {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  .section_titile{
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  .hero__description {
+    font-size: 14px;
+  }
+
+  .hero__about {
+    text-align: center;
+  }
+
+  .hero__links {
+    justify-content: center;
+  }
+
+  .hero__box {
+    max-width: 350px;
+    justify-self: center;
+  }
+
+  .container{
+    text-align: center; 
+  }
+}
+
+
+@keyframes ava-animate {
+  0% {
+    border-radius: 62% 38% 72% 28% / 67% 32% 68% 33%;
+  }
+
+  40% {
+    border-radius: 37% 63% 53% 47% / 67% 32% 68% 33%;
+  }
+
+  60% {
+    border-radius: 23% 77% 39% 61% / 78% 54% 46% 22%;
+  }
+
+  100% {
+    border-radius: 18% 82% 24% 76% / 43% 54% 46% 57%;
+  }
+}
+
+@keyframes ava-bg {
+  from {
+    backdrop-filter: hue-rotate(0);
+  }
+
+  to {
+    backdrop-filter: hue-rotate(90deg);
+  }
+}
