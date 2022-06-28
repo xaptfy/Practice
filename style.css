@@ -200,7 +200,7 @@ body.switchMode .section_title{
 }
 .portfolio_items .item img{
 
-  max-width: 95%;
+  max-width: 100%;
 }
 .portfolio_items .item1 img{
   
@@ -211,22 +211,22 @@ body.switchMode .section_title{
   max-width: 95%;
 }
 
-.portfolio_items .text p{
+.portfolio_items .text a{
 	color: #3f3f3f;
 }
-body.switchMode .text p{
+body.switchMode .text a{
   color: #C0C0C0;
 }
-.portfolio_items .text1 p{
+.portfolio_items .text1 a{
 	color: #3f3f3f;
 }
-body.switchMode .text1 p{
+body.switchMode .text1 a{
   color: #C0C0C0;
 }
-.portfolio_items .text2 p{
+.portfolio_items .text2 a{
 	color: #3f3f3f;
 }
-body.switchMode .text2 p{
+body.switchMode .text2 a{
   color: #C0C0C0;
 }
 
