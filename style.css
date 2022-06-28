@@ -173,6 +173,8 @@ body.switchMode .section_titile{
   margin-top: 45px;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 .portfolio_items.item{
   display: block;
