@@ -54,9 +54,7 @@ hero {
   margin: 0 auto;
   padding: 0 15px;
 }
-body.switchMode .container{
-  background-color: #3f3f3f;
-}
+
 .header nav ul li{
   list-style-type: none;
 }
