@@ -153,12 +153,18 @@ body.switchMode .hero_link:hover{
   max-width: 500px;
   justify-self: center;
   overflow: hidden;
-  border: 10px solid #fff;
+  border: 7px solid #fff;
 
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
   animation: ava-animate 5s infinite alternate;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
+  transition: all .7s ease;
+}
+body.switchMode .hero__box{
+  border: 7px solid #3f3f3f;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+   transition: all .7s ease;
 }
 
 .hero__box-img {
