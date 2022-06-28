@@ -181,12 +181,7 @@ body.switchMode .hero__box{
   animation: ava-bg 3s infinite alternate;
 }
 
-.section_title{
-  font-size: 32px;
-  font-weight: 400;	
-  color: #3f3f3f;
 
-}
 
 /*портфолио фото*/
 .section_title{
@@ -195,9 +190,21 @@ body.switchMode .hero__box{
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+
+  
 }
 body.switchMode .section_title{
   color: #C0C0C0;
+}
+.portfolio_items{
+	display: flex;
+    flex-direction: column;
+	text-align: center;
+    justify-content: center;
+    color: #3f3f3f;
 }
 .portfolio_items.item{
   display: block;
