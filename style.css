@@ -40,7 +40,7 @@ h3 {
   color: #C0C0C0;
 }
 /*расположение блока*/
-hero {
+.hero {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -169,7 +169,7 @@ body.switchMode .portfolio{
   color: #C0C0C0;
 }
 /*портфолио фото*/
-.portfolio_items{
+.section_title{
   margin-top: 45px;
   display: flex;
   flex-wrap: nowrap;
