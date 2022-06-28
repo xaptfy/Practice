@@ -199,16 +199,15 @@ body.switchMode .section_title{
 	margin-right: 0;
 }
 .portfolio_items .item img{
-
-  max-width: 100%;
+  max-width: 50%;
 }
 .portfolio_items .item1 img{
   
-  max-width: 95%;
+  max-width: 50%;
 }
 .portfolio_items .item2 img{
   
-  max-width: 95%;
+  max-width: 50%;
 }
 
 .portfolio_items .text a{
