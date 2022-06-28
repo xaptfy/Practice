@@ -7,13 +7,12 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-    transition: all .7s ease;
+  transition: all .7s ease;
 }
 /*кнопка смены режима*/
 body.switchMode{
   background-color: #3f3f3f;
 }
-
 
 img {
   width: 100%;
