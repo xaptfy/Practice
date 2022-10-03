@@ -160,7 +160,7 @@ body.switchMode .hero_link:hover{
 }
 
 .hero__box {
-  max-width: 500px;
+  max-width: 400px;
   justify-self: center;
   overflow: hidden;
   border: 7px solid #fff;
